@@ -29,7 +29,7 @@ gem 'gravatar_image_tag', '1.0.0.pre2'
 # and rake tasks are available in development mode:
  group :development do
    gem 'rspec-rails', '2.3.0'
-   gem 'annotate-models', '1.0.4'
+   gem 'annotate', '2.4.0'
  end
 
  group :test do
