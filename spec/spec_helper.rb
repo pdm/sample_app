@@ -8,6 +8,10 @@ Spork.prefork do
   ENV["RAILS_ENV"] ||= 'test'
   require File.expand_path("../../config/environment", __FILE__)
   require 'rspec/rails'
+
+  def test_sign_in(user)
+    controller.sign_in(user)
+  end
 end
 
 Spork.each_run do
